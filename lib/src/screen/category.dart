@@ -52,9 +52,7 @@ class Categorystate extends State<Category> {
         ),
       ),
     );
-  }
-
-  Color colorsected(selected, index) {
+      Color colorsected(selected, index) {
     Color setcolor = selected == index ? Colors.white : Colors.transparent;
     return setcolor;
   }
@@ -64,3 +62,6 @@ class Categorystate extends State<Category> {
     return setcolor;
   }
 }
+  }
+
+
