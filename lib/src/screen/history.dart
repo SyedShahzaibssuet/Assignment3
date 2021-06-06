@@ -101,27 +101,11 @@ class _TilesViewState extends State<TilesView> {
         return Card(
           child: ListTile(
             leading: CircleAvatar(
-              child: products[index].image,
+              child: Image.asset(products[index].image),
             ),
             title: Text(
               products[index].title,
               style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-            ),
-            subtitle: Row(
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: [
-                Icon(
-                  Icons.star,
-                  color: Colors.yellow,
-                ),
-                Padding(
-                  padding: EdgeInsets.only(left: 5.0),
-                ),
-                Text(
-                  '23 (reviews)',
-                  style: TextStyle(fontSize: 16),
-                ),
-              ],
             ),
             trailing: Text(
               "\$ ${products[index].price}",
