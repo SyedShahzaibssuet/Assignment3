@@ -1,10 +1,12 @@
 # e_commerce
 
-A new Flutter project.
+Flutter project.
 
 ## Getting Started
 
 This project is a starting point for a Flutter application.
+Assigmnet No 3 for jawan Pakistan
+
 
 A few resources to get you started if this is your first Flutter project:
 
