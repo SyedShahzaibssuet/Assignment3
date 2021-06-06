@@ -39,9 +39,8 @@ class _ProfilePageState extends State<Account> {
         ),
         body: Stack(
           children: [
-            profile(),
             SizedBox(
-              height: 80,
+              height: 10,
             ),
             Container(
               margin: const EdgeInsets.symmetric(horizontal: 20),
@@ -73,46 +72,6 @@ class _ProfilePageState extends State<Account> {
   }
 }
 
-Widget profile() {
-  return SingleChildScrollView(
-    child: Container(
-      padding: const EdgeInsets.all(10),
-      margin: const EdgeInsets.only(left: 10),
-      child: Row(
-        children: [
-          Container(
-            decoration: BoxDecoration(
-              color: Colors.white,
-            ),
-            child: Icon(Icons.verified_user),
-            width: 140,
-          ),
-          Expanded(
-            child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 10),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    'User',
-                    style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold),
-                  ),
-                  SizedBox(height: 5),
-                  Text(
-                    'user@gmail.com',
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
-                  ),
-                  SizedBox(height: 30),
-                ],
-              ),
-            ),
-          ),
-        ],
-      ),
-    ),
-  );
-}
 
 class AccountInfo extends StatefulWidget {
   const AccountInfo({Key? key}) : super(key: key);
@@ -134,11 +93,11 @@ class _AccountInfoState extends State<AccountInfo> {
     ];
 
     final subtitles = [
-      "User",
-      "user@gmail.com",
+      "Abc",
+      "abc@gmail.com",
       "+0900-78601",
-      "House No 12/B Gulshan E Iqbal Karachi",
-      "Male",
+      "House No 12/B, Karachi",
+      "Female",
       "06-June-2021"
     ];
 
